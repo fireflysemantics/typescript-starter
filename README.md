@@ -1,4 +1,4 @@
-# fireflysemantics/typescript-starter
+# @fireflysemantics/typescript-starter
 
 # Use
 

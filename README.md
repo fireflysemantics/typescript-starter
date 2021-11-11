@@ -22,7 +22,7 @@ Keys mapped to `npm run build`
 cmd + shift + b
 ```
 
-@ Project Structure
+## Project Structure
 
 The `src` directory holds the Typescript and test (`.test.ts` or `.spec.ts`) files.
 

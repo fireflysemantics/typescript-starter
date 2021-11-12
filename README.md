@@ -3,7 +3,7 @@
 # Use
 
 ```
-git@github.com:fireflysemantics/typescript-starter.git <project_name>
+git clone git@github.com:fireflysemantics/typescript-starter.git <project_name>
 cd <project_name>
 npm run install-all
 npm test

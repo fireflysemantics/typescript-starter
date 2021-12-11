@@ -5,5 +5,5 @@
  import { hello } from '@fs/index'
 
  test('should say Hola', ()=> {
-    expect(hello()).toContain('Hola');
+    expect(hello('Hola')).toContain('Hola');
 })

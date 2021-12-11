@@ -7,13 +7,13 @@
   "scripts": {
     "install-devdeps": "npm i -D typescript typedoc ts-node ts-jest source-map-support @types/node jest @types/jest",
     "install-tools": "npm i -g del-cli npm-install-peers npm-check-updates @jsdevtools/version-bump-prompt http-server",
-    "install-all": "npm run install-devdeps && npm run install-tools",    
+    "install-all": "npm run install-devdeps && npm run install-tools",
     "update": "ncu -u && npm i && npm-install-peers",
     "pub": "npm t && bump patch && npm run update && npm run build && npm publish",
     "test": "jest",
     "build": "del-cli dist && tsc",
     "doc": "del-cli doc && typedoc --entryPointStrategy expand ./src/ --out doc --exclude **/*.spec.ts",
-    "sdoc": "npm run doc && http-server -o doc"    
+    "sdoc": "npm run doc && http-server -o doc"
   },
   "keywords": [
     "node",
@@ -29,12 +29,22 @@
   ],
   "author": "Firefly Semantics Corporation",
   "license": "MIT",
-  "homepage": "https://github.com/angular/fireflysemantics/typescript-starter",  
+  "homepage": "https://github.com/angular/fireflysemantics/typescript-starter",
   "bugs": {
     "url": "https://github.com/fireflysemantics/typescript-starter/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fireflysemantics/typescript-starter.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "jest": "^27.4.4",
+    "source-map-support": "^0.5.21",
+    "ts-jest": "^27.1.1",
+    "ts-node": "^10.4.0",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.3"
   }
 }
